@@ -1,0 +1,128 @@
+.page-header {
+  text-align: center;
+  font-size: 40px;
+  background: darkkhaki;
+  box-shadow: 1px -1px 7px 1px rgba(0, 0, 0, 0.33);
+}
+.page-main {
+  position: relative;
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #7cfff0;
+  height: 900px;
+  margin-top: 10px;
+}
+.row-blocks {
+  max-width: 1012px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 33.33%;
+}
+.section-block {
+  position: relative;
+  float:  left;
+  width: 33.33%;
+  height: 1005;
+  height:  100%;
+}
+.content-block {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+}
+.content-block2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 31%;
+}
+.content-block3 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  bottom:  0%;
+}
+.text {
+  position: absolute;
+  top: 18%;
+  font-size: 40px;
+}
+#content-a {
+  background: red;
+  border-radius: 50%;
+}
+#content-b {
+  background: yellow;
+  border-radius: 20%;
+  top: 0%;
+  left: 46%;
+  border: 1px solid red;
+}
+#content-c {
+  background: blue;
+  right: 0%;
+}
+#content-d {
+  top: 46%;
+  background: green;
+  border-right: 6px solid blue;
+}
+#content-e {
+  background: orange;
+  width: 110px;
+  height: 110px;
+  top: 46%;
+  left: 46%;
+}
+#content-f {
+  background: purple;
+  top: 46%;
+  right: 0%;
+}
+#content-g {
+  bottom: 0%;
+  left: 0%;
+}
+#content-h {
+  background: black;
+  color: white;
+  bottom: 0%;
+  left: 46%;
+}
+#content-i {
+  background: gray;
+  right: 0%;
+  bottom: 0%;
+}
+#text-a {
+  left: 33%;
+}
+#text-b {
+  right: 2%;
+}
+#text-c {
+
+}
+#text-d {
+  right: 1%;
+}
+#text-e {
+  right: 40%;
+  top: 26%;
+}
+#text-f {
+
+}
+#text-g {
+  right: 0%;
+  color: green;
+}
+#text-h {
+
+}
+#text-i {
+  color: red;
+  top: -22px;
+  left: 46%;
+}
