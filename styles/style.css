@@ -1,8 +1,6 @@
-.page-header {
-  text-align: center;
-  font-size: 40px;
-  background: darkkhaki;
-  box-shadow: 1px -1px 7px 1px rgba(0, 0, 0, 0.33);
+body {
+  margin: 0px;
+  padding: 0px;
 }
 .page-main {
   position: relative;
@@ -44,8 +42,7 @@
   bottom:  0%;
 }
 .text {
-  position: absolute;
-  top: 18%;
+  line-height: 1.8;
   font-size: 40px;
 }
 #content-a {
@@ -95,34 +92,18 @@
   right: 0%;
   bottom: 0%;
 }
-#text-a {
-  left: 33%;
-}
-#text-b {
-  right: 2%;
-}
-#text-c {
-
-}
-#text-d {
-  right: 1%;
-}
-#text-e {
-  right: 40%;
-  top: 26%;
-}
-#text-f {
-
-}
-#text-g {
-  right: 0%;
-  color: green;
-}
-#text-h {
-
-}
-#text-i {
+#content-i span {
+  position:  absolute;
   color: red;
-  top: -22px;
-  left: 46%;
+  top: -36px;
+  left: 43%;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
 }
