@@ -10,9 +10,9 @@
 </head>
 <body>
   <header class="page-header">
-    <section class="section-logo container">
+    <section class="section-logo container clr">
       <div class="logo-div">
-        <a href="#">
+        <a class="clr"href="#">
           <img class="img-logo" src="images/logo.jpg" alt="logo">
           <div class="div-sologan">
             <h1>Specialized Clinic</h1>
@@ -20,13 +20,18 @@
           </div>
         </a>
       </div>
-      <div class="contact-div">
-        <span class="icon icon-phone"></span><strong class="question">Question for the doctor? </strong><span class="phone-number">05113941 977</span>
+      <div class="contact-div clr">
+        <span class="phone-number">05113941 977</span>
+        <strong class="question">Question for the doctor? </strong>
+        <img class="icon-phone" src="images/icon-phone.png" alt="logo">
       </div>
     </section>
     <section class="section-nav">
-      <nav class="menu-nav container">
-        <ul class="menu-list">
+      <nav class="menu-nav container clr">
+        <a href="javascript:void(0);" class="bars-icon" onclick="dropDown()">
+          <img class="bars-img" src="images/bars-icon.png" alt="logo">
+        </a>
+        <ul class="menu-list" id="menu-list">
           <li class="menu-item"><a href="#">Home</a></li>
           <li class="menu-item"><a href="#">About us</a></li>
           <li class="menu-item"><a href="#">Health Services</a></li>
@@ -34,7 +39,7 @@
           <li class="menu-item"><a href="#">Set Calendar</a></li>
           <li class="menu-item"><a href="#">Consult &amp; Contact</a></li>
         </ul>
-        <ul class="social-list">
+        <ul class="social-list clr">
           <li class="social-item"><a href="#"><span class="icon icon-youtube"></span></a></li>
           <li class="social-item"><a href="#"><span class="icon icon-google"></span></a></li>
           <li class="social-item"><a href="#"><span class="icon icon-facebook"></span></a></li>
@@ -49,7 +54,7 @@
         <li class="breadcrumbs-item"><a>HEALTH SERVICES</a></li>
       </ul>  
     </section>
-    <section class="section-content container">
+    <section class="section-content container clr">
       <aside class="sidebar-left">
         <section class="category">
           <ul class="category-list">
@@ -70,94 +75,110 @@
           </ul>
         </section>
         <section class="form-schedule">
-          <h3>Book Schedule</h3>
-          <div class="short-line"></div>
-          <form class="form-group" action="#" method="post">
-            <input class="form-input" type="text" name="fullname" id="fullname" placeholder="Full name">
-            <input class="form-input" type="text" name="address" id="address" placeholder="Address">
-            <input class="form-input" type="text" name="phonenumber" id="phonenumber" placeholder="Phone number">
-            <input class="form-input" type="date" name="time" id="time" placeholder="Time">
-            <button class="form-input submit" type="submit">Send</button>
-            
-          </form>
+          <div class="form-div">
+            <h3>Book Schedule</h3>
+            <div class="short-line"></div>
+            <form class="form-group" action="#" method="post">
+              <input class="form-input" type="text" name="fullname" id="fullname" placeholder="Full name">
+              <input class="form-input" type="text" name="address" id="address" placeholder="Address">
+              <input class="form-input" type="text" name="phonenumber" id="phonenumber" placeholder="Phone number">
+              <input class="form-input" type="date" name="time" id="time" placeholder="Time">
+              <button class="form-input submit" type="submit">Send</button>
+            </form>
+          </div>
         </section>
       </aside>
-      <section class="container services">
-        <ul class="services-list">
+      <section class="services">
+        <ul class="services-list clr">
           <li class="services-item" id="service-1">
-            <a href="#"><img src="images/hinh1.jpg" alt="Services Image"></a>
-            <h4><a href="#">Neck shoulder pain</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
-            
+            <div class="service-div">
+              <a href="#"><img src="images/hinh1.jpg" alt="Services Image"></a>
+              <h4><a href="#">Neck shoulder pain</a></h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>
           </li>
           <li class="services-item" id="service-2">
-            <a href="#"><img src="images/hinh2.jpg" alt="Services Image"></a>
-            <h4><a href="#">Neck shoulder pain</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
-            
+            <div class="service-div">
+              <a href="#"><img src="images/hinh2.jpg" alt="Services Image"></a>
+              <h4><a href="#">Neck shoulder pain</a></h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>  
           </li>
           <li class="services-item" id="service-3">
-            <a href="#"><img src="images/hinh3.jpg" alt="Services Image"></a>
-            <h4><a href="#">Neck shoulder pain</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna 
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
-          </li>           
-        
+            <div class="service-div">
+              <a href="#"><img src="images/hinh3.jpg" alt="Services Image"></a>
+              <h4><a href="#">Neck shoulder pain</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>
+          </li>       
           <li class="services-item" id="service-4">
-            <a href="#"><img src="images/hinh4.jpg" alt="Services Image"></a>
-            <h4><a href="#">Neck shoulder pain</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
+            <div class="service-div">
+              <a href="#"><img src="images/hinh4.jpg" alt="Services Image"></a>
+              <h4><a href="#">Slow say</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>
           </li>
           <li class="services-item" id="service-5">
-            <a href="#"><img src="images/hinh5.jpg" alt="Services Image"></a>
-            <h4><a href="#">Slow say</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
+            <div class="service-div">
+              <a href="#"><img src="images/hinh5.jpg" alt="Services Image"></a>
+              <h4><a href="#">Slow say</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>
           </li>
           <li class="services-item" id="service-6">
-            <a href="#"><img src="images/hinh6.jpg" alt="Services Image"></a>
-            <h4><a href="#">Slow say</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>              
+            <div class="service-div">
+              <a href="#"><img src="images/hinh6.jpg" alt="Services Image"></a>
+              <h4><a href="#">Slow say</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>               
           </li>
           <li class="services-item" id="service-7">
-            <a href="#"><img src="images/hinh7.jpg" alt="Services Image"></a>
-            <h4><a href="#">Slow say</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
+            <div class="service-div">
+              <a href="#"><img src="images/hinh7.jpg" alt="Services Image"></a>
+              <h4><a href="#">Slow say</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>
           </li>
           <li class="services-item" id="service-8">
-            <a href="#"><img src="images/hinh8.jpg" alt="Services Image"></a>
-            <h4><a href="#">Neck shoulder pain</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>              
+            <div class="service-div">
+              <a href="#"><img src="images/hinh8.jpg" alt="Services Image"></a>
+              <h4><a href="#">Neck shoulder pain</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>      
           </li>
           <li class="services-item" id="service-9">
-            <a href="#"><img src="images/hinh9.jpg" alt="Services Image"></a>
-            <h4><a href="#">Neck shoulder pain</a></h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
-              <a href="#"><span class="icon icon-view"></span></a>
-            </p>
+            <div class="service-div">
+              <a href="#"><img src="images/hinh9.jpg" alt="Services Image"></a>
+              <h4><a href="#">Neck shoulder pain</a></h4>
+              <p>
+                  Lorem ipsum dolor sit amet, consectuter adpicising elit sed do eiusmod tempor incididunt ut labore et dolore magna
+              </p>
+              <a class="view-more" href="#"><img src="images/view-more.png" alt="Services Image"></a>
+            </div>
           </li>
         </ul>
       </section>
@@ -165,7 +186,7 @@
   </main>
   <footer class="page-footer">
     <section class="section-more-infor container">
-      <ul class="more-infor-list">
+      <ul class="more-infor-list clr">
         <li class="more-infor-item infor-left">
           <h3>About Us</h3>
           <ul class="sub-list">
@@ -193,11 +214,21 @@
       </ul>
     </section>
     <section class="section-author">
-      <div class="copyright container">
-          <span class="copyright-left">&copy; 2018 COPYRIGHT OF SPECIALIZED CLINIC</span>
-          <span class="design-by">DESIGN BY <span>DD.COM</span></span>
+      <div class="copyright container clr">
+        <span class="copyright-left">&copy; 2018 COPYRIGHT OF SPECIALIZED CLINIC</span>
+        <span class="design-by">DESIGN BY <span>DD.COM</span></span>
       </div>
     </section>
   </footer>
+  <script>
+     function dropDown() {
+          var x = document.getElementById("menu-list");
+          if (x.className === "menu-list") {
+            x.className += " responsive";
+          } else {
+            x.className = "menu-list";
+          }
+      }
+  </script>
 </body>
 </html>
