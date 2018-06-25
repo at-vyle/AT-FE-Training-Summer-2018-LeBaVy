@@ -343,6 +343,10 @@ border-top: solid 1px #81D1F8;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .img-logo {
+    width: 60px;
+    height: 60px;
+  }
   .menu-list {
     width: 83%;
   }
@@ -436,7 +440,7 @@ border-top: solid 1px #81D1F8;
     font-size: 11px;
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .logo-div {
     margin-top: 2.1vh;
   }
@@ -463,10 +467,10 @@ border-top: solid 1px #81D1F8;
     display: none;
   }
   .menu-nav {
-    height: 50px;
+    height: 44px;
   }
   .menu-item {
-    padding: 15px;
+    padding: 14px;
   }
   .menu-item a {
     font-size: 9px;
@@ -562,12 +566,13 @@ border-top: solid 1px #81D1F8;
     font-size: 10px;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 599px) {
+@media only screen and (max-width: 599px) {
   .section-logo {
     height: 60px;
   }
   .logo-div {
     width: 60%;
+    margin-top: 0.9vh;
   }
   .contact-div {
     width: 40%;
@@ -591,6 +596,7 @@ border-top: solid 1px #81D1F8;
     font-size: 13px
   }
   .bars-icon {
+    display: block;
     float: left;
   }
   .bars-img {
@@ -634,69 +640,11 @@ border-top: solid 1px #81D1F8;
   .section-breadcrumbs {
     height: 98px;
   }
-  .breadcrumbs-list {
-    font-size: 10px;
-  }
-  .breadcrumbs-item {
-    line-height: 96px;
-  }
-  .section-content {
-    margin-top: 37px;
-  }
-  .category {
-    padding: 4px 4px 4px 0px;
-  }
-  .category-item>a {
-    line-height: 3;
-    font-size: 12px;
-  }
   .icon-collapse {
     line-height: 0.9;
   }
   .icon-expand {
     line-height: 1.5;
-  }
-  .adults-list {
-    padding: 3% 0%;
-    font-size: 10px;
-  }
-  .adults-item {
-    margin-left: 5%;
-  }
-  .form-schedule {
-    padding: 4px 4px 4px 0px;
-  }
-  .form-div h3 {
-    line-height: 3;
-    font-size: 12px;
-  }
-  .form-input {
-    font-size: 11px;
-  }
-  .submit {
-    font-size: 11px;
-  }
-  .short-line {
-    width: 52px;
-  }
-  .service-div {
-    margin: 4px;
-  }
-  .service-div>h4 {
-    font-size: 12px;
-    margin: 5%;
-  }
-  .service-div>p {
-    font-size: 11px;
-  }
-  .page-footer {
-    height: 170px;
-  }
-  .section-more-infor {
-    height: 147px;
-  }
-  .more-infor-item>h3 {
-    font-size: 11px;
   }
   .sub-item {
     font-size: 9px;
@@ -713,7 +661,7 @@ border-top: solid 1px #81D1F8;
     font-size: 10px;
   }   
 }
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (max-width: 479px) {
   .section-logo {
     height: 47px;
   }
@@ -729,7 +677,7 @@ border-top: solid 1px #81D1F8;
     height: 33px;
   }
   .div-sologan {
-    font-size: 10px;
+    font-size: 9px;
   }
   .question {
     display: none;
@@ -885,11 +833,10 @@ border-top: solid 1px #81D1F8;
     height: 47px;
   }
   .logo-div {
-    width: 65%;
+    width: 100%;
   }
   .contact-div {
-    width: 35%;
-    padding-top: 18px;
+    display: none;
   }
   .img-logo {
     width: 33px;
