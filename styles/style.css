@@ -8,6 +8,12 @@ a {
   text-decoration: none;
   color: black;
 }
+a:hover {
+  color: #58b0ff;
+  -webkit-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
 .container {
   margin: auto;
   max-width: 1480px;
@@ -87,12 +93,20 @@ a {
 }
 .menu-item {
   float: left;
-  padding: 22px;
+  padding: 21px 0px;
 }
 .menu-item a {
   text-transform: uppercase;
   color:  #8f8f8f;
   font-size: 14px;
+  padding: 20px;
+}
+.menu-item a:hover {
+  background: #58b0ff;
+  color: #ffffff;
+  -webkit-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
 }
 .menu-list .menu-item:not(:first-child){
   border-left: solid 1px #e8e8e8;
@@ -332,6 +346,12 @@ color: #6b7174;
   color: #86ffbf;
 }
 @media only screen and (min-width: 1024px) {
+  .menu-list {
+    width: 88%;
+  }
+  .social-list {
+    width: 11%;
+  }
   .bars-icon {
     display: none;
   }
@@ -351,10 +371,11 @@ color: #6b7174;
     height: 50px;
   }
   .menu-item {
-    padding: 17px;
+    padding: 12px 0px;
   }
   .menu-item a {
     font-size: 9px;
+    padding: 17px;
   }
   .bars-icon {
     display: none;
@@ -464,10 +485,11 @@ color: #6b7174;
     height: 44px;
   }
   .menu-item {
-    padding: 14px;
+    padding: 9px 0px;
   }
   .menu-item a {
     font-size: 9px;
+    padding: 14px;
   }
   .sidebar-left {
     width: 25%;
@@ -617,10 +639,10 @@ color: #6b7174;
   .menu-item {
     float: left;
     width: 39%;
-    padding: 15px 12px;
+    padding: 15px 13px;
   }
   .menu-item a {
-    font-size: 13px;
+    font-size: 12px;
   }
   .sidebar-left {
     width: 40%;
@@ -634,11 +656,29 @@ color: #6b7174;
   .section-breadcrumbs {
     height: 98px;
   }
+  .category-item>a {
+    font-size: 14px;
+  }
+  .adults-list {
+    font-size: 13px;
+  }
+  .form-div h3 {
+    font-size: 14px;
+  }
+  .form-input {
+    font-size: 12px;
+  }
   .icon-collapse {
     line-height: 0.9;
   }
   .icon-expand {
     line-height: 1.5;
+  }
+  .service-div>h4 {
+    font-size: 14px;
+  }
+  .service-div>p {
+    font-size: 13px;
   }
   .sub-item {
     font-size: 9px;
