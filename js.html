@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="myjs.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>HTML + Javascript Exercise</h1>
+  </header>
+  <main>
+    <div><h2>Knowledge round-up</h2></div>
+    <div><h3>**Javascript**</h3></div>
+    <div>
+      <h4>Q1:</h4>
+      <p>- What are the differences between a variable that is: `null`, `undefined`?</p>
+      <p><u>Answer:</u> <br>
+        <strong>Null</strong> means an empty or non-existent value. Null is assigned, and explicitly means nothing.<br>
+        <strong>Undefined</strong> means a variable has been declared, but the value of that variable has not yet been defined.
+      </p>
+    </div>
+    <div>
+        <h4>Q2:</h4>
+        <p>What is `use strict`? what are the advantages and disadvantages to using it?</p>
+        <p><u>Answer:</u> <br>
+          If you put "use strict"; at the top of your code (or function), then the JS is evaluated in strict mode. Strict mode throws more errors and disables some features in an effort to make your code more robust, readable, and accurate.
+        </p>
+        <p>
+          * Advantages: 
+          Strict mode helps out in a couple ways.
+          <ul>
+            <li>It catches some common coding bloopers, throwing exceptions.</li>
+            <li>It prevents, or throws errors, when relatively “unsafe” actions are taken (such as gaining access to the global object).</li>
+            <li>It disables features that are confusing or poorly thought out.</li>
+          </ul>
+          * Disadvantages:<br> If a developer used a library that was in strict mode, but the developer was used to working in normal mode, they might call some actions on the library that wouldn’t work as expected. Worse, since the developer is in normal mode, they don’t have the advantages of extra errors being thrown, so the error might fail silently.
+        </p>
+      </div>
+      <div>
+          <h4>Q3:</h4>
+          <p>What are the differences between `==` and `===`? Write an example for each case (if any)?</p>
+          <p><u>Answer:</u> <br>
+            <strong>Strict Equality Comparison (===)</strong> is only true if the operands are of the same type and the contents match.<br>
+            <img src="images/==.png">
+            
+          </p>
+          <div>
+            <strong>Abstract Equality Comparison (==)</strong> converts the operands to the same type before making the comparison. 
+            <br>
+            <img src="images/===.png">
+          </div>
+        </div>
+        <div>
+          <h4>Q4:</h4>
+          <p>What is different between declaration: `var`, `const` and `let`?</p>
+          <div><u>Answer:</u> <br>
+            <div>
+              <strong>var</strong> declarations are globally scoped or function/locally scoped.Any variable that is declared with var outside a function block is available for use in the whole window. var is function scoped when it is declared within a function. This means that it is available and can be accessed only within that function.
+              <br><i>var variables can be re-declared and updated</i>
+            </div>
+            <br>
+            <div>
+              <strong>let</strong> is block scoped.A block is chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block. So a variable declared in a block with the let is only available for use within that block. 
+              <br><i>let can be updated but not re-declared.</i>
+            </div>
+            <br>
+            <div>
+              <strong>const</strong> declarations are block scoped.Like let declarations, const declarations can only be accessed within the block it was declared.
+              <br><i>const cannot be updated or re-declared</i>
+            </div>
+          </div>
+        </div>
+  </main>
+</body>
+</html>
