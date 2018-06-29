@@ -172,10 +172,6 @@ window.onload = function() {
     }
     return sum;
   }
-  var total = localStorage.getItem('total');
-  if(total){
-    updateCart(total);
-  }
   var idList = JSON.parse(localStorage.getItem('id-product'));
   var total = 0;
   if(!idList){
