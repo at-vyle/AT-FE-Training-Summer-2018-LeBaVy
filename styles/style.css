@@ -113,7 +113,7 @@ table {
 }
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
@@ -136,4 +136,13 @@ tr:hover {
 }
 .div-author {
   line-height: 4;
+}
+.sum-product {
+
+}
+.sum-product>td {
+  font-size: 30px;
+  padding: 23px;
+  background: #c6d4e0;
+  color: #e83c3c;
 }

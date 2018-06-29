@@ -57,7 +57,7 @@ window.onload = function() {
         '<div class="product-div">' +
           '<img class="img-product" src="images/' + listShoes[i].image + '" alt="Image">' +
           '<h4 class="name-product">' + listShoes[i].name + '</h4>' +
-          '<span class="price-product">' + listShoes[i].price + ' đ</span>' +
+          '<span class="price-product">' + listShoes[i].price + ' VND</span>' +
           '<a href="javascript:void(0)" class="add-cart" id="' + listShoes[i].id + '" href="#"><img class="img-add-cart" src="images/add-cart.png" alt="Add cart"></a>' +
         '</div>' +
       '</li>';
@@ -70,20 +70,20 @@ window.onload = function() {
     addCart[i].addEventListener('click',function() {
       var idValue = this.getAttribute('id');
       if(idList.length > 0){
-        var resultObject = search(this.getAttribute('id'), idList);
+        var resultObject = searchById(idValue, idList);
         var cartItem;
         if(!resultObject){
-          cartItem  = {id:this.getAttribute('id'), quanlity:1};
+          cartItem  = {id:idValue, quanlity:1};
           idList.push(cartItem);
         }else{
           for (var j = 0; j < idList.length; j++) {
-            if(this.getAttribute('id') === idList[j].id){
+            if(idValue === idList[j].id){
               idList[j].quanlity += 1;
             }
           }
         }
       }else {
-        cartItem  = {'id':this.getAttribute('id'),'quanlity':1};
+        cartItem  = {'id':idValue,'quanlity':1};
         idList.push(cartItem);
       }
       ++total;
@@ -93,7 +93,7 @@ window.onload = function() {
     });
     }
   }
-  function search(nameKey, myArray){
+  function searchById(nameKey, myArray){
     for (var i=0; i < myArray.length; i++) {
         if (myArray[i].id === nameKey) {
           return myArray[i];
@@ -114,7 +114,7 @@ window.onload = function() {
               '</tr>';
     var shoeObjectAdd;
     for (var i=0; i < idCartList.length; i++) {
-      shoeObjectAdd = search(idCartList[i].id, listShoes);
+      shoeObjectAdd = searchById(idCartList[i].id, listShoes);
       html +=
       '<tr class="table-row" id="product-item-' + idCartList[i].id + '">' +
         '<td>' +
@@ -124,13 +124,29 @@ window.onload = function() {
           '<span class="name-product">' + shoeObjectAdd.name + '</span>' +
         '</td>' +
         '<td>' +
-          '<span class="price-product">' + shoeObjectAdd.price + ' đ</span>' +
+          '<span class="price-product">' + shoeObjectAdd.price + ' VND</span>' +
         '</td>' +
         '<td class="quanlity">' + idCartList[i].quanlity + '</td>' +
         '<td><a href="javascript:void(0)" class="item-del" id="' + shoeObjectAdd.id + '"><img class="remove-icon" src="images/remove.png" alt=""></a></td>' +
       '</tr>';
     }
+    html += '<tfoot>'+
+              '<tr class="sum-product">'+
+                '<td colspan="2">Total</td>'+
+                '<td id="sum-price">' + sumPrice(idCartList, listShoes) + ' VND</td>'+
+                '<td id="total-product">' + total + '</td>'+
+                '<td></td>'+
+              '</tr>'+
+            '</tfoot>';
     document.getElementById('cart-table').innerHTML = html;
+  }
+  function sumPrice(idCartList, listShoes) {
+    var shoeObjectAdd, sumPrice = 0;
+    for (var i = 0; i < idCartList.length; i++) {
+      shoeObjectAdd = searchById(idCartList[i].id, listShoes);
+      sumPrice += shoeObjectAdd.price * idCartList[i].quanlity;
+    }
+    return sumPrice;
   }
   function delCart(idCartList) {
     var listItemCartDel = document.getElementsByClassName('item-del');
@@ -144,6 +160,8 @@ window.onload = function() {
         localStorage.setItem('id-product', JSON.stringify(idCartList));
         localStorage.setItem('total', countProduct(idCartList));
         updateCart(countProduct(idCartList));
+        document.getElementById('sum-price').innerHTML = sumPrice(idCartList, listShoes) + ' VND';
+        document.getElementById('total-product').innerHTML = countProduct(idCartList);
       });
     }
   }
